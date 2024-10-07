@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <link rel="stylesheet" href="stylesheet.css">
+  
+  <!-- <script type="" src=""></script> -->
+  <title>Frontend Mentor | FAQ accordion</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body>
+  <!-- <script src="./script.js"></script> -->
+  <main class="card card--BRadius_16px">
+  <div class="card__title"><img src="assets/images/icon-star.svg" alt="" class="card__title__img"><h1 class="card__title__h1 card__title__h1--FSize3rem">FAQs</h1></div>
+
+  <div class="card__content">
+  <div class="card__content__list">
+    <div class="card__content__list__title"><h2>What is Frontend Mentor, and how will it help me?</h2> <img src="assets/images/icon-plus.svg" alt=""></div>
+    <div class="card__content__list__text">
+  <p>Frontend Mentor offers realistic coding challenges to help developers improve their 
+  frontend coding skills with projects in HTML, CSS, and JavaScript. It's suitable for 
+  all levels and ideal for portfolio building.</p>
+</div>
+  </div>
+  <div class="card__content__list">
+  <div class="card__content__list__title"><h2>Is Frontend Mentor free?</h2><img src="assets/images/icon-plus.svg" alt=""></div>
+  
+  <!-- <div class="card__content__list__title"><a href=""><h2>Is Frontend Mentor free?</h2><img src="assets/images/icon-plus.svg" alt=""></a></div> -->
+   
+  
+  <div class="card__content__list__text">
+  <p>Yes, Frontend Mentor offers both free and premium coding challenges, with the free 
+  option providing access to a range of projects suitable for all skill levels.</p>
+    </div>
+</div>
+  <div class="card__content__list">
+    <div class="card__content__list__title"><h2>Can I use Frontend Mentor projects in my portfolio?</h2><img src="assets/images/icon-plus.svg" alt=""></div>
+    <div class="card__content__list__text">
+    <p> Yes, you can use projects completed on Frontend Mentor in your portfolio. It's an excellent
+    way to showcase your skills to potential employers!</p>
+      </div>
+
+  </div>
+  <div class="card__content__list">
+    <div class="card__content__list__title"><h2>How can I get help if I'm stuck on a Frontend Mentor challenge?</h2><img src="assets/images/icon-plus.svg" alt=""></div>
+    <div class="card__content__list__text">
+  <p>The best place to get help is inside Frontend Mentor's Discord community. There's a help 
+  channel where you can ask questions and seek support from other community members.</p>
+    </div>
+  </div>
+  </div>
+  
+
+
+
+
+
+  </main>
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Kofi K</a>.
+  </div>
+
+<!-- <script>
+  var acc = document.getElementsByClassName("card__content__list__title");
+var i;
+
+// alert(acc);
+for (i = 0; i < acc.length; i++) {
+  acc[i].addEventListener("click", function() {
+    /* Toggle between adding and removing the "active" class,
+    to highlight the button that controls the panel */
+    this.classList.toggle("active");
+
+    /* Toggle between hiding and showing the active panel */
+    var panel = this.nextElementSibling;
+    if (panel.style.display === "block") {
+      panel.style.display = "none";
+    } 
+    else {
+      panel.style.display = "block";
+    }
+  });
+} 
+</script> -->
+
+
+<script>
+  var list=document.querySelectorAll(".card__content__list");
+
+  for (j=0;j<list.length;j++){
+    list[j].addEventListener("click",function toggle() {
+        this.classList.toggle("active");
+        
+    })
+
+};
+</script>
+
+</body>
+</html>

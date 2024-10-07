@@ -1,0 +1,130 @@
+@font-face {
+    
+    font-family: WorkSans;
+    src: url(assets/fonts/WorkSans-VariableFont_wght.ttf);
+}
+
+:root{
+    --White: hsl(0, 0%, 100%);
+    --Light-pink: hsl(275, 100%, 97%);
+    --Grayishpurple: hsl(292, 16%, 49%);
+    --Darkpurple: hsl(292, 42%, 14%);
+    --FWeight400:400;
+    --FWeight600:600;
+    --FWeight700:700;
+}
+
+body{
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items:center ;
+    justify-content: center;
+    color: var(--Darkpurple);
+    font-family: WorkSans;
+    background-color: var(--Light-pink);
+
+
+}
+.card{
+    /* seems width:max-content can be used to manually alter sizes at a fixed rate,so no responsiveness */
+    /* also,width:auto is repsonsive no matter if display:flex is active /not */
+    /* width: max-content; */
+    /* max-width:24rem ; */
+    /* max-width: 34rem; */
+    max-width: 49rem;
+    /* max-width limits the  maximum width of a element to a certain size */
+    background-color: var(--White);
+    padding: 1rem;
+    
+}
+.card--FWeight700{
+    font-weight: var(--FWeight700);
+}
+.card--FWeight400{
+    font-weight: var(--FWeight400);
+}
+.card--FWeight600{
+    font-weight: var(--FWeight600);
+}
+.card--BRadius_16px{
+    border-radius: 1rem;
+}
+.card__title{
+    display: flex;
+flex-direction: row;
+}
+.card__title__h1--FSize3rem{
+    font-size: 3rem;
+}
+
+.card__title__h1{
+    font-weight: var(--FWeight700);
+
+}
+.card__title__img{
+padding-right: 1rem;
+}
+.card__content__list{
+    border-bottom: thin solid var(--Light-pink);
+    
+
+}
+.card__content__list:nth-last-child(1){
+    border-bottom: none;
+}
+.card__content__list p{
+    color: var(--Grayishpurple);
+}
+.card__content__list__title{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    /* transition: 0.4s; */
+}
+.card__content__list__text{
+    /* display: none; */
+    height: 0;
+    /* max-height: 0; */
+    overflow: hidden;
+    transition: all 0.3s;
+}
+
+.active, .card__content__list__title:hover {
+    /* background-color: var(--Light-pink); */
+    cursor:pointer;
+  }
+.card__content__list.active .card__content__list__text{
+    /* display: flex; */
+    /* height:auto; */
+    height: 5rem;
+    overflow: scroll;
+}
+.card__content__list.active .card__content__list__title img{
+    content:url("assets/images/icon-minus.svg");
+    /* used to change image sources for examples. */
+    /* border: thin solid #000; */
+}
+/* .card__content__list.card__content__list__text */
+
+@media (min-width:500px) {
+    body{
+        background-image: url(assets/images/background-pattern-desktop.svg);
+        background-repeat: no-repeat;
+        background-size: contain;
+    }
+    
+}
+@media (max-width:500px) {
+    body{
+        background-image: url(assets/images/background-pattern-mobile.svg);
+        background-repeat: no-repeat;
+        background-size: contain;
+    }
+    .card {
+        /* max-width: 23rem; */
+        max-width: 18.75rem;
+    }
+    
+}
