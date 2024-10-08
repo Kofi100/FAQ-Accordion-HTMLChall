@@ -68,6 +68,7 @@ padding-right: 1rem;
 .card__content__list{
     border-bottom: thin solid var(--Light-pink);
     
+    
 
 }
 .card__content__list:nth-last-child(1){

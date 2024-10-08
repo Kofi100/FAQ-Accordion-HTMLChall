@@ -22,7 +22,7 @@
   <div class="card__title"><img src="assets/images/icon-star.svg" alt="" class="card__title__img"><h1 class="card__title__h1 card__title__h1--FSize3rem">FAQs</h1></div>
 
   <div class="card__content">
-  <div class="card__content__list">
+  <div class="card__content__list" tabindex="0">
     <div class="card__content__list__title"><h2>What is Frontend Mentor, and how will it help me?</h2> <img src="assets/images/icon-plus.svg" alt=""></div>
     <div class="card__content__list__text">
   <p>Frontend Mentor offers realistic coding challenges to help developers improve their 
@@ -30,7 +30,7 @@
   all levels and ideal for portfolio building.</p>
 </div>
   </div>
-  <div class="card__content__list">
+  <div class="card__content__list" tabindex="0">
   <div class="card__content__list__title"><h2>Is Frontend Mentor free?</h2><img src="assets/images/icon-plus.svg" alt=""></div>
   
   <!-- <div class="card__content__list__title"><a href=""><h2>Is Frontend Mentor free?</h2><img src="assets/images/icon-plus.svg" alt=""></a></div> -->
@@ -41,7 +41,7 @@
   option providing access to a range of projects suitable for all skill levels.</p>
     </div>
 </div>
-  <div class="card__content__list">
+  <div class="card__content__list" tabindex="0">
     <div class="card__content__list__title"><h2>Can I use Frontend Mentor projects in my portfolio?</h2><img src="assets/images/icon-plus.svg" alt=""></div>
     <div class="card__content__list__text">
     <p> Yes, you can use projects completed on Frontend Mentor in your portfolio. It's an excellent
@@ -49,7 +49,7 @@
       </div>
 
   </div>
-  <div class="card__content__list">
+  <div class="card__content__list" tabindex="0">
     <div class="card__content__list__title"><h2>How can I get help if I'm stuck on a Frontend Mentor challenge?</h2><img src="assets/images/icon-plus.svg" alt=""></div>
     <div class="card__content__list__text">
   <p>The best place to get help is inside Frontend Mentor's Discord community. There's a help 
@@ -97,11 +97,24 @@ for (i = 0; i < acc.length; i++) {
   var list=document.querySelectorAll(".card__content__list");
 
   for (j=0;j<list.length;j++){
-    list[j].addEventListener("click",function toggle() {
+    list[j].addEventListener("click",toggle)
+
+    list[j].addEventListener("keydown",toggle_withEnterKey)
+
+    function toggle() {
         this.classList.toggle("active");
         
-    })
-
+    }
+    // fcn below identifies and uses the Enter key to toggle the content in each list.
+    function toggle_withEnterKey(event) {
+      let key=event.key;
+      // console.log(key);
+      
+      if (key==="Enter"){
+        toggle.call(this);
+      }
+      
+    }
 };
 </script>
 
