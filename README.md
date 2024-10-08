@@ -1,4 +1,4 @@
-# Frontend Mentor - FAQ accordion solution
+ bvhu876# Frontend Mentor - FAQ accordion solution
 
 This is a solution to the [FAQ accordion challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/faq-accordion-wyfFdeBwBz). Frontend Mentor challenges help you improve your coding skills by building realistic projects. 
 
@@ -16,12 +16,12 @@ This is a solution to the [FAQ accordion challenge on Frontend Mentor](https://w
 - [Author](#author)
 - [Acknowledgments](#acknowledgments)
 
-**Note: Delete this note and update the table of contents based on what sections you keep.**
+
 
 ## Overview
 
 ### The challenge
-
++
 Users should be able to:
 
 - Hide/Show the answer to a question when the question is clicked
@@ -46,7 +46,7 @@ Active State of Accordion
 ### Links
 
 - Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Live Site URL: [https://kofi100.github.io/FAQ-Accordion-HTMLChall/](https://kofi100.github.io/FAQ-Accordion-HTMLChall/)
 
 ## My process
 
