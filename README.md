@@ -45,7 +45,7 @@ Active State of Accordion
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
+- Solution URL: [https://www.frontendmentor.io/solutions/faq-accordion-using-htmlcssjavascript-NSHf807TBB](https://www.frontendmentor.io/solutions/faq-accordion-using-htmlcssjavascript-NSHf807TBB)
 - Live Site URL: [https://kofi100.github.io/FAQ-Accordion-HTMLChall/](https://kofi100.github.io/FAQ-Accordion-HTMLChall/)
 
 ## My process
